@@ -1,0 +1,37 @@
+// In dieser Datei wird ein Bild mittels image: eingebunden.
+// Daher sollte die relative Lage des Abbildungsverzeichnisses angegeben werden.
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:schnittstellen]]
+= [[sec:schnittstellen]] Schnittstellen
+
+[[sec:ui]]
+== [[sec:ui]] User Interface `ConnectNow_WebUI`
+
+== Anmelden oder Registrieren
+
+In folgender Abbildung erkennt man den Ablauf eines Anmelde- oder Registrierungsprozesses. Der Benutzer hat die Wahl zwischen einer Anmeldung mit bestehenden Zugangsdaten und einer Registrierung für ein neues Konto. Je nach Auswahl gelangt er zu den jeweiligen Eingabemasken, in denen er entweder seine Anmeldedaten eingibt oder die erforderlichen Informationen für eine neue Registrierung bereitstellt. Nach erfolgreicher Anmeldung oder Registrierung wird der Benutzer zur Startseite der Anwendung weitergeleitet. 
+
+image::anmelden_oder_registrieren.png[width="800",height="800",alt="LF07/09"]
+
+== Bildschirm Teilen
+In der folgenden Abbildung sieht man die Funktion zur Bildschirmfreigabe. Der Benutzer hat die Möglichkeit, seinen gesamten Bildschirm, ein bestimmtes Fenster oder einen Tab zu teilen. Während der Freigabe kann der Benutzer entscheiden, den geteilten Bildschirm jederzeit zu beenden. Zuschauer haben in diesem Modus eine klare Ansicht des freigegebenen Inhalts, was die Zusammenarbeit und Präsentation vereinfacht.
+
+image::BildschirmTeilen.png[width="600",height="600",alt="io"]
+
+== Raum beitreten oder erstellen
+In der Abbildung wird gezeigt, wie der Benutzer einen Raum erstellen oder einem bestehenden Raum beitreten kann. Bei Raum erstellen gibt er einen Namen und ein Password ein. Bei Raum beitreten gibt er einfach den Raumnamen und ein Passwort ein, um Zugang zu erhalten.
+
+image::RaumBeitreten_oder_erstellen_verlassen.png[width="800",height="800",alt="io"]
+
+== Account löschen
+In der Abbildung wird der Ablauf zum Löschen eines Accounts dargestellt. Der Benutzer klickt auf seinen Namen, wählt die Option „Account löschen“ und bestätigt die Löschung im darauffolgenden Fenster. Nach der Bestätigung wird der Account dauerhaft entfernt.
+
+image::Accountloeschen.png[width="800",height="800",alt="io"]
+
+== Nutzer stummschalten oder rauswerfen 
+In der Abbildung sieht man, wie ein Moderator einen Nutzer stummschalten oder aus dem Raum entfernen kann. Der Moderator klickt dazu auf das Bild des jeweiligen Nutzers im Raum und erhält eine Auswahl mit den Optionen „Stummschalten“ und „Rauswerfen“. Damit kann der Moderator schnell und direkt auf das Verhalten der Teilnehmer reagieren.
+
+image::Rauswerfen_Stummschalten.png[width="600",height="600",alt="io"]

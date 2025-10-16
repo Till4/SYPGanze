@@ -1,0 +1,97 @@
+[[sec:verteilung]]
+= [[sec:verteilung]] Verteilung
+
+[[sec:buildartefakte]]
+== [[sec:buildartefakte]] Artefakte
+
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+image::Verteilung_artefakte.png[width="500",height="500",alt="Diagramm"]
+
+
+**Projektbeschreibung und Verteilung der Artefakte**
+
+== 1. Frontend-Komponenten
+
+WebUI::
+*Beschreibung*: Die Web-Benutzeroberfläche (UI) bildet den Einstiegspunkt für Benutzer. Sie enthält verschiedene HTML- und CSS-Dateien sowie unterstützende JavaScript-Dateien.
+
+*Verwendete Dateien*:
+- `*.html`: HTML-Dateien für verschiedene Seiten wie Login, Registrierung und Raum.
+- `*.css`: CSS-Dateien für das Styling der Benutzeroberfläche.
+- `script.js`: Unterstützende Skripte für die Interaktivität der WebUI.
+
+*Verwendung*:
+- Die WebUI greift auf `roomPage.html` und `RoomClient.js` zu, um interaktive Funktionen für Videoräume bereitzustellen.
+
+Mediasoup-Client::
+*Beschreibung*: Der Mediasoup-Client ist für die Kommunikation zwischen der WebUI und dem Backend zuständig, speziell für Video- und Audioübertragungen.
+
+*Verwendete Dateien*:
+- `RoomClient.js`: Die Haupt-JavaScript-Datei, die die Verbindung mit dem Mediasoup-Server herstellt.
+- `roomPage.js`: Unterstützende Funktionen für die Raumseite.
+
+*Verwendung*:
+- Der Mediasoup-Client wird direkt von der WebUI verwendet, um Video- und Audio-Streams zu verwalten.
+
+== 2. Backend-Komponenten
+
+NodeServer::
+*Beschreibung*: Dies ist der zentrale Server, der die Backend-Logik verarbeitet und mit dem Frontend und der Datenbank kommuniziert.
+
+*Verwendete Dateien*:
+- `app.js`: Die Hauptserverdatei, die die Verbindung zwischen verschiedenen Diensten herstellt.
+- `configServer.js`: Konfigurationsdatei für den Server.
+
+*Verwendung*:
+- Der NodeServer nutzt die Service-Komponenten wie `ClassService` und den `FirestoreManager`.
+
+ClassService::
+*Beschreibung*: Diese Komponente verwaltet Klassenlogik, die für die Räume und Benutzerinteraktionen verwendet wird.
+
+*Verwendete Dateien*:
+- `Peer.js`: Verwaltet Peer-to-Peer-Verbindungen.
+- `Room.js`: Stellt die Logik für Räume bereit.
+- `User.js`: Verarbeitet Benutzerinformationen und deren Logik.
+
+*Verwendung*:
+- Der NodeServer nutzt die Klassenlogik, um Benutzer und Räume dynamisch zu erstellen und zu verwalten.
+
+== 3. Datenbank-Komponente
+
+=== FirestoreManager
+*Beschreibung*: Diese Komponente verwaltet die Datenbankzugriffe und stellt die Verbindung zu Firebase Firestore her.
+
+*Verwendete Dateien*:
+- `Firebase.js`: Initialisiert die Verbindung zur Firebase-Datenbank.
+
+*Verwendung*:
+- Der FirestoreManager wird vom NodeServer und ClassService genutzt, um Daten wie Benutzerinformationen, Raumeinstellungen und Verbindungen zu speichern und abzurufen.
+
+
+
+== [[sec:datenverteilung]] Daten-Verteilung
+Note: Beschreiben Sie hier, welche logischen Datenspeicher, d.h. Datenbank-Schemata und Dateien in Ihrem System welche Daten aus link:../02_spezifikation/01_datenschema[dem Datenschema-Abschnitt] führend speichern.
+
+Aus den im Datenschema-Abschnitt genannten Daten, wird nur Daten vom Typ Versandauftrag führend in Parcer gespeichert und zwar in einem Datenbank-Schema namens Parcer-Schema
+
+[[sec:deployment]]
+== [[sec:deployment]] Deployment
+NOTE: Beschreiben Sie hier mittels eines UML-Verteilungsdiagramms, wie aus welchen Nodes und Laufzeitumgebungen Ihre Produktivumgebung besteht. Nutzen Sie Stereotypen, um Nodes und Laufzeitumgebungen zu klassifizieren, beispielsweise «AppServer» oder «JRE». Stellen Sie auch dar, welche Artefakte auf welche Nodes deployt bzw. in welchen Laufzeitumgebungen geladen werden. Beschreiben Sie des Weiteren (im Begleittext), welche Daten aus dem link:../02_spezifikation/01_datenschema[dem Datenschema-Abschnitt] wo führend gespeichert werden.
+
+image::Dataschema_part.drawio.png[height="800" , width="750", alt="Datenschema"] 
+
+====
+
+Der Ablauf der Anwendung verläuft also folgendermaßen:
+
+Ein Benutzer (Client) stellt eine Anfrage → Reverse Proxy leitet die Anfrage an die WebUI oder den App-Server weiter.
+Die WebUI stellt die Benutzeroberfläche bereit und ermöglicht Interaktionen. Für Medienübertragungen arbeitet die WebUI mit dem Mediasoup-Client zusammen.
+Der App-Server übernimmt die serverseitige Logik, orchestriert die Geschäftsprozesse und kommuniziert mit den Services.
+Der ClassService stellt die Kernfunktionen (Raum-, Benutzer-, Peer-Management) bereit.
+Der FirestoreManager sorgt für die Speicherung und Verwaltung von Daten.
+Die Ergebnisse und Medien werden an den Benutzer zurückgegeben, der sie in der WebUI sieht.
+
+====

@@ -1,0 +1,45 @@
+[[sec:qualitaetsanforderungen]]
+= [[sec:qualitaetsanforderungen]] Qualitätsanforderungen
+
+
+[[sec:LQ01]]
+== [[sec:LQ01]] /LQ01/ Echtzeitvideoübertragung
+[horizontal]
+Kategorie:: Performance
+Beschreibung:: ConnectNow muss Video und Audio übertragen können.
+
+
+[[sec:LQ02]]
+== [[sec:LQ02]] /LQ02/ Teilnehmeranzahl im Meeting
+[horizontal]
+Kategorie:: Kapazitär/Performance
+Beschreibung:: ConnectNow soll in jedem Meeting eine Kapazität von bis zu 4 Nutzern gewährleisten können, ohne dass es zu Leistungsproblemen kommt. Diese hängen stark des Server ( CPU ) ab.
+
+
+[[sec:LQ03]]
+== [[sec:LQ03]] /LQ03/ Verfügbarkeit 
+[horizontal]
+Kategorie:: Verlässlichkeit/Verfügbarkeit
+Beschreibung:: ConnectNow soll 99,9% der Zeit für Nutzer verwendbar sein.
+
+[[sec:LQ04]]
+== [[sec:LQ04]] /LQ04/ Skalierbarkeit
+[horizontal]
+Kategorie:: Skalierbarkeit/Kapazität
+Beschreibung:: ConnectNow muss eine skalierbare Datenbank besitzen, um mit einer wachsenden Nutzeranzahl umgehen zu können.
+
+[[sec:LQ05]]
+== [[sec:LQ05]] /LQ05/ Benutzeroberfläche
+[horizontal]
+Kategorie:: Benuzerfreudlichkeit
+Beschreibung:: ConnectNow muss eine ansprechende und einfach zu benutzende Benutzeroberfläche besitzen.
+
+[[sec:LQ06]]
+== [[sec:LQ06]] /LQ06/ Sicherheit der Meetings
+[horizontal]
+Kategorie:: Sicherheit
+Beschreibung:: ConnectNow muss sicherstellen, dass niemand Unbefugtes Zugang zu Meetings erhält.
+
+
+
+

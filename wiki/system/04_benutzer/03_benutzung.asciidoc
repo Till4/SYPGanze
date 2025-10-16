@@ -1,0 +1,152 @@
+= Benutzung
+
+NOTE: Beschreiben Sie hier, wie das System über eine Benutzeroberfläche (UI) von Endbenutzern verwendet werden kann. Screenshots können zur Veranschaulichung genutzt werden. Bei der Beschreibung einer API können Sie auf die link:../02_spezifikation/03_schnittstellen#API[Schnittstellen-Spezifikation] verweisen, falls diese bereits detailliert beschrieben ist.
+
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:Anmeldung_und_registierung]]
+== Anmeldung und Registierung
+
+=== Anmeldung
+
+image::Annmeldung.png[width="500",height="500",alt="Diagramm"]
+
+Durch Klicken auf den „Anmelden“-Button öffnet sich ein neues Fenster, in dem die Benutzer ihre Anmeldedaten eingeben können.
+
+image::annmeldung_eingabe.png[width="500",height="500",alt="Eingabeformular"]
+
+- **Benutzername**: Geben Sie im ersten Feld den Benutzername an von ihrem Konto.
+- **Passwort**: Im zweiten Feld geben Sie ihren Passwort ein von ihrem Konto.
+
+image::login_button_bei_annmeldung.png[width="500",height="500",alt="Login-Button"]
+
+Nachdem Sie alle Felder ausgefüllt haben, klicken Sie auf den „Login“-Button. Das System überprüft, ob Sie bereits ein Konto haben:
+- Wenn ein Konto existiert, werden Sie zur Startseite der Anwendung weitergeleitet.
+- Falls kein Konto gefunden wird, erhalten Sie eine Fehlermeldung.
+
+image::loginSeite_registrieren_button.png[width="500",height="500",alt="Login-Button"]
+ Durck Klicken auf den "Registrieren" -Button öffnet sich die Registrieren Seite, Damit Benutzer, falls sie noch kein Konto haben, sich ein Konto anlegen können.
+
+=== Registrierung
+
+image::Registierung_pfeil.png[width="500",height="500",alt="Registrierungs-Button"]
+
+Durch Klicken auf den „Registrieren“-Button öffnet sich ein neues Fenster, in dem die Benutzer ein Konto erstellen können.
+
+image::registierung_input_felder.png[width="500",height="500",alt="Registrierungsformular"]
+
+- **Benutzername**: Geben Sie den gewünschten Namen an, wie Sie von anderen Nutzern in der Anwendung gesehen werden möchten. Dieser Name wird auch bei der Anmeldung verwendet.
+- **E-Mail-Adresse**: Tragen Sie Ihre E-Mail-Adresse ein, die für die Kommunikation und zur Identifikation dient.
+- **Passwort**: Erstellen Sie ein sicheres Passwort, das für die Verschlüsselung und den Schutz Ihres Kontos verwendet wird.
+
+
+image::registierung_button.png[width="500",height="500",alt="Registrierungsformular"]
+
+Nach Abschluss der Eingabe klicken Sie auf „Konto erstellen“. Das System prüft die Eingaben auf Vollständigkeit und Korrektheit. Bei erfolgreicher Registrierung erhalten Sie eine Bestätigung und können sich anschließend mit den angegebenen Daten anmelden
+
+image::registerSeite_anmelden_button.png[width="500",height="500",alt="Login-Button"]
+ Durck Klicken auf den "Anmelden" -Button öffnet sich die Anmelden Seite, Damit Benutzer, falls sie schon ein Konto haben, sich anmelden können.
+
+[[sec:Startseite]]
+== Startseite
+
+=== Abmelden
+
+image::Startseite_abmelden_button.png[width="500",height="500",alt="Abmelde-Button"]
+
+Wenn Sie auf den **„Abmelden“-Button** klicken, werden Sie abgemeldet und zurück zur ersten Seite geleitet, auf der Sie sich erneut anmelden oder ein Konto erstellen können.
+
+=== Raum erstellen
+
+image::Startseite_raumerstellen_button.png[width="500",height="500",alt="Raum-Erstellen-Button"]
+
+Durch Klicken auf den **„Raum-Erstellen“-Button** gelangen Sie in ein neues Fenster, in dem Sie einen Raum erstellen können.
+
+image::seite_raumerstellen_input.png[width="500",height="500",alt="Raum erstellen Eingabefelder"]
+
+- **Raum-ID**: Geben Sie hier einen Namen für Ihren Raum ein. Dieser Name wird verwendet, damit andere Benutzer Ihrem Raum beitreten können.
+- **Passwort (optional)**: Sie können ein Passwort für den Raum festlegen, um unbefugten Zugriff durch unerwünschte Benutzer zu verhindern.
+
+image::seite_raumerstellen_button.png[width="500",height="500",alt="Raum erstellen Button"]
+
+Wenn Sie auf den **„Raum erstellen“-Button** klicken, wird geprüft, ob der Raum erfolgreich erstellt werden kann. Nach erfolgreicher Erstellung werden Sie zur Raum-Seite weitergeleitet.
+
+=== Raum beitreten
+
+image::startseite_raumbeitreten_button.png[width="500",height="500",alt="Raum beitreten Button"]
+
+Durch Klicken auf den **„Raum-Beitreten“-Button** gelangen Sie in ein neues Fenster, in dem Sie einem bestehenden Raum beitreten können.
+
+image::seite_raumbeitreten_input.png[width="500",height="500",alt="Raum beitreten Eingabefelder"]
+
+- **Raum-ID**: Geben Sie hier den Namen des Raums ein, dem Sie beitreten möchten.
+- **Passwort (falls erforderlich)**: Geben Sie das Passwort des Raums ein, falls dieser passwortgeschützt ist.
+
+image::seite_raumbeitreten_button.png[width="500",height="500",alt="Raum beitreten Button"]
+
+Nachdem Sie die Felder ausgefüllt haben, klicken Sie auf den **„Raum beitreten“-Button**. Das System überprüft, ob der Raum existiert und die eingegebenen Daten korrekt sind. Nach erfolgreicher Verifizierung werden Sie zur Raum-Seite weitergeleitet, wo Sie den Raum nutzen können.
+
+
+[[sec:Raumseite]]
+== Raum
+
+=== Chat ausblenden
+image::raumseite_chatverschwinden.png[width="500",height="500",alt="Chat ausblenden Button"]
+
+Durch Klicken auf den Button wird der Chat ausgeblendet. (siehe nächstes Bild)
+
+image::raumseite_chatverschwunden.png[width="500",height="500",alt="Chat ausgeblendet"]
+
+=== Nachrichten senden (chatten)
+image::raumseite_chatten.png[width="500",height="500",alt="Nachrichten senden"]
+
+Geben Sie eine Nachricht in das Eingabefeld ein. Durch Klicken auf den Button oder Drücken der Enter-Taste wird die Nachricht im Chat sichtbar, sodass alle Teilnehmer sie lesen können. Im gezeigten Beispiel wurde „Hallo“ gesendet.
+
+=== Raum verlassen
+image::raumseite_raumverlassen.png[width="500",height="500",alt="Raum verlassen Button"]
+
+Durch Klicken auf den Button verlassen Sie den Raum. Sie werden zurück auf die Seite geleitet, auf der Sie entweder einen Raum erstellen oder einem Raum beitreten können.
+
+=== Mikrofon
+image::raumseite_mikrofonanschalten.png[width="500",height="500",alt="Mikrofon anschalten Button"]
+
+Durch Klicken auf den Button aktivieren Sie Ihr Mikrofon, sodass die anderen Teilnehmer Sie hören können.
+
+image::raumseite_mikrofonausschalten.png[width="500",height="500",alt="Mikrofon ausschalten Button"]
+
+Durch Klicken auf den Button deaktivieren Sie Ihr Mikrofon wieder, sodass Sie nicht mehr hörbar sind.
+
+=== Kamera
+image::raumseite_kameraeinschalten.png[width="500",height="500",alt="Kamera einschalten Button"]
+
+Durch Klicken auf den Button aktivieren Sie Ihre Kamera, sodass die anderen Teilnehmer Sie sehen können.
+
+image::raumseite_kameraausschalten.png[width="500",height="500",alt="Kamera ausschalten Button"]
+
+Durch Klicken auf den Button deaktivieren Sie Ihre Kamera.
+
+=== Bildschirm teilen
+image::raumseite_bildschirmteilen.png[width="500",height="500",alt="Bildschirm teilen Button"]
+
+Durch Klicken auf den Button können Sie auswählen, welchen Bildschirm, Tab oder welches Fenster Sie teilen möchten. (siehe nächstes Bild)
+
+image::raumseite_bildschrimauswaehlen.png[width="500",height="500",alt="Bildschirm auswählen"]
+
+Wählen Sie aus der Liste einen Tab, ein Fenster oder den gesamten Bildschirm aus und klicken Sie auf den Button „Teilen“, um Ihren Bildschirm zu teilen. Dadurch können die anderen Teilnehmer Ihren Bildschirm sehen.
+
+image::raumseite_bildschrimteilenbeenden.png[width="500",height="500",alt="Bildschirm teilen beenden Button"]
+
+Durch Klicken auf den Button beenden Sie die Bildschirmfreigabe.
+
+=== Auswahl von Mikrofon und Kamera
+image::pfeile_kamera_mikro.png[width="500",height="500",alt="Mikrofon / Kamera auswählen Button"]
+
+Durch Klicken auf die Mikrofon-Leiste öffnet sich eine Liste mit verfügbaren Mikrofonen. Wählen Sie das gewünschte Mikrofon aus, um es für die Audioübertragung zu verwenden.
+
+Durch Klicken auf die Kamera-Leiste können Sie auswählen, welche Kamera Sie für die Videoübertragung verwenden möchten.
+
+
+
+

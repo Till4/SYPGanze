@@ -1,0 +1,32 @@
+[[sec:randbedinungen]]
+= [[sec:randbedinungen]] Randbedingungen
+
+In diesem Teil werden die Randbedingungen oder verwendeten externen Systeme / Framesworks kurz beschrieben und erläutert.
+
+
+[[sec:LC01]]
+== [[sec:LC01]] /LC01/ Node.Js
+Node.js wird als Serverumgebung ( Framework )genutzt, um die Signalisierung und Verbindungskontrolle von ConnectNow zu verwalten. 
+
+[[sec:LC02]]
+== [[sec:LC02]] /LC02/ WebRTC
+Die echzeit Video und Audioübertragung wird durch WebRTC umgesetzt.
+
+[[sec:LC03]]
+== [[sec:LC03]] /LC03/ Firebase
+Firebase speichert die Daten der Neutzeraccounts.
+
+[[sec:LC04]]
+== [[sec:LC04]] /LC04/ Socket.IO
+Die Socket.IO Bibliothek ermöglicht die Echtzeit-Kommunikation zwischen Client und Server.
+
+[[sec:LC05]]
+== [[sec:LC05]] /LC05/ Express
+Ein minimalistisches Web-Framework für Node.js, das die Erstellung von Servern und Routen vereinfacht.
+
+[[sec:LC06]]
+== [[sec:LC06]] /LC06/ Mediasoup
+Eine Medienserver-Lösung für WebRTC, die Echtzeit-Kommunikation für Video- und Audio-Streaming ermöglicht. Der Medienserver wird dadurch als SFU umgesetzt.
+
+
+

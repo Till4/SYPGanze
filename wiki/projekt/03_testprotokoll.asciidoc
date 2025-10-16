@@ -1,0 +1,292 @@
+[[sec:testprotokoll]]
+= [[sec:testprotokoll]] Testprotokoll
+
+[[TF01]]
+== [[TF01]] /TF01/ Bildschirm teilen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF01[/LF01/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Teilen des Bildschirms
+erwartetes Ergebnis:: Bildschirm wird geteilt und Button zum Ausschalten wird angezeigt
+Ergebnis:: Bildschirm wird geteilt und Button zum Ausschalten wird angezeigt
+
+[[TF02]]
+== [[TF02]] /TF02/ Bildschirm ausschalten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF02[/LF02/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Teilen des Bildschirms
+6. Klicken auf Button zum Ausschalten des Bildschirms
+erwartetes Ergebnis:: Bildschirm wird nicht mehr geteilt und Button zum Einschalten des Bildschirms wird angezeigt
+Ergebnis:: Bildschirm wird nicht mehr geteilt und Button zum Einschalten des Bildschirms wird angezeigt
+
+[[TF03]]
+== [[TF03]] /TF03/ Audio einschalten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF03[/LF03/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Einschalten des Mikrofons
+erwartetes Ergebnis:: Audio wird übertragen und Button zum Ausschalten des Mikrofons wird angezeigt
+Ergebnis:: Audio wird übertragen und Button zum Ausschalten des Mikrofons wird angezeigt
+
+[[TF04]]
+== [[TF04]] /TF04/ Audio ausschalten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF04[/LF04/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Einschalten des Mikrofons
+6. Klicken auf Button zum Ausschalten des Mikrofons
+erwartetes Ergebnis:: Audio wird nicht mehr übertragen und Button zum Einschalten des Mikrofons wird angezeigt
+Ergebnis:: Audio wird nicht mehr übertragen und Button zum Einschalten des Mikrofons wird angezeigt
+
+[[TF05]]
+== [[TF05]] /TF05/ Video einschalten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF05[/LF05/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Einschalten der Kamera
+erwartetes Ergebnis:: Video wird übertragen und Button zum Ausschalten der Kamera wird angezeigt
+Ergebnis:: Video wird übertragen und Button zum Ausschalten der Kamera wird angezeigt
+
+[[TF06]]
+== [[TF06]] /TF06/ Video ausschalten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF06[/LF06/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum anlegen
+5. Klicken auf Button zum Einschalten der Kamera
+6. Klicken
+erwartetes Ergebnis:: Video wird nicht mehr übertragen und Button zum Einschalten der Kamera wird angezeigt
+Ergebnis:: Video wird nicht mehr übertragen und Button zum Einschalten der Kamera wird angezeigt
+
+[[TF07]]
+== [[TF07]] /TF07/ Erstellen eines Raumes mit noch nicht vergebenem Raum ID
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF07[/LF07/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen mit noch nicht vergebenem Raum ID
+erwartetes Ergebnis:: Raum wird erstellt und dialog fenster mit "Raum erfolgreich erstellt" wird angezeigt
+Ergebnis:: Raum wird erstellt und dialog fenster mit "Raum erfolgreich erstellt" wird angezeigt
+
+[[TF08]]
+== [[TF08]] /TF08/ Erstellen eines Raumes mit bereits vergebenem Raum ID
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF07[/LF07/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen mit bereits vergebenem Raum ID
+erwartetes Ergebnis:: Raum wird nicht erstellt und dialog fenster mit "Raum ID bereits vergeben" wird angezeigt
+Ergebnis:: Raum wird nicht erstellt und dialog fenster mit "Raum ID bereits vergeben" wird angezeigt
+
+[[TF09]]
+== [[TF09]] /TF09/ Beitritt zu einem vorhandenen Raum mit richtigem Passwort
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF08[/LF08/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen
+5. Klicken auf Button "Raum beitreten"
+6. Raum ID eingeben
+7. Passwort eingeben
+erwartetes Ergebnis:: Raum wird betreten und dialog fenster mit "Raum erfolgreich betreten" wird angezeigt
+Ergebnis:: Raum wird betreten und dialog fenster mit "Raum erfolgreich betreten" wird angezeigt
+
+[[TF10]]
+== [[TF10]] /TF10/ Beitritt zu einem vorhandenen Raum mit falschem Passwort
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF08[/LF08/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen
+5. Klicken auf Button "Raum beitreten"
+6. Raum ID eingeben
+7. Falsches Passwort eingeben
+erwartetes Ergebnis:: Raum wird nicht betreten und dialog fenster mit "Falsches Passwort" wird angezeigt
+Ergebnis:: Raum wird nicht betreten und dialog fenster mit "Falsches Passwort" wird angezeigt
+
+[[TF11]]
+== [[TF11]] /TF11/ Beitritt zu einem nicht vorhandenen Raum
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF08[/LF08/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum beitreten"
+4. Raum ID eingeben
+5. Auf Button "Raum beitreten" klicken
+erwartetes Ergebnis:: Raum wird nicht betreten und dialog fenster mit "Raum nicht gefunden" wird angezeigt
+Ergebnis:: Raum wird nicht betreten und dialog fenster mit "Raum nicht gefunden" wird angezeigt
+
+[[TF12]]
+== [[TF12]] /TF12/ Verlassen eines Raumes
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF09[/LF09/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen
+5. Klicken auf Button für Raum verlassen
+erwartetes Ergebnis:: Raum wird verlassen und man landet wieder auf der Hauptseite
+Ergebnis::
+Raum wird verlassen und man landet wieder auf der Hauptseite
+
+[[TF13]]
+== [[TF13]] /TF13/ Registrierung mit gültige Eingabedaten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF10[/LF10/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Klicken auf Button "Registrieren"
+3. Gültige Eingabedaten eingeben
+erwartetes Ergebnis:: Registrierung erfolgreich und dialog fenster mit "Registrierung erfolgreich" wird angezeigt
+Ergebnis:: Registrierung erfolgreich und dialog fenster mit "Registrierung erfolgreich" wird angezeigt
+
+[[TF14]]
+== [[TF14]] /TF14/ Registrierung mit ungültige Eingabedaten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF10[/LF10/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Klicken auf Button "Registrieren"
+3. Ungültige Eingabedaten eingeben
+erwartetes Ergebnis:: Registrierung nicht erfolgreich und dialog fenster mit "Registrierung nicht erfolgreich" wird angezeigt
+Ergebnis:: Registrierung nicht erfolgreich und dialog fenster mit "Registrierung nicht erfolgreich" wird angezeigt
+
+[[TF15]]
+== [[TF15]] /TF15/ Anmeldung mit gültigen Anmeldedaten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF12[/LF12/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Klicke auf Button "Registrieren"
+3. Gültige Eingabedaten eingeben und auf Registrieren klicken
+4. Nach weiterleiten auf Anmelde Seite selbe benutzerdaten eingeben
+erwartetes Ergebnis:: Anmeldung erfolgreich und dialog fenster mit "Anmeldung erfolgreich" wird angezeigt
+Ergebnis:: Anmeldung erfolgreich und dialog fenster mit "Anmeldung erfolgreich" wird angezeigt
+
+[[TF16]]
+== [[TF16]] /TF16/ Anmeldung mit ungültigen Anmeldedaten
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF12[/LF12/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Klicke auf Button "Anmelden"
+3. Ungültige Eingabedaten eingeben
+erwartetes Ergebnis:: Anmeldung nicht erfolgreich und dialog fenster mit "Anmeldung nicht erfolgreich" wird angezeigt
+Ergebnis:: Anmeldung nicht erfolgreich und dialog fenster mit "Anmeldung nicht erfolgreich" wird angezeigt
+
+[[TF17]]
+== [[TF17]] /TF17/ Benutzung des Chats
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF13[/LF13/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten
+3. Klicken auf Button "Raum erstellen"
+4. Neuen Raum erstellen
+5. Nach weiterleitung in Raum in die Chatbox schreiben
+6. Auf Senden klicken oder Enter drücken
+erwartetes Ergebnis:: Nachricht wird gesendet und in Chatbox angezeigt
+Ergebnis:: Nachricht wird gesendet und in Chatbox angezeigt
+
+[[TF18]]
+== [[TF18]] /TF18/ Adminrechte verteilen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF14[/LF14/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten eines Admin Accounts
+3. Klicken auf Button "Admin Einstellungen"
+4. Benutzer in der Tabelle auswählen
+5. Auf Button "Adminrechte verteilen" klicken
+erwartetes Ergebnis:: Benutzer erhält Adminrechte
+Ergebnis:: Benutzer erhält Adminrechte und Spalte "Admin" in der Tabelle steht auf "Ja"
+
+[[TF19]]
+== [[TF19]] /TF19/ Adminrechte entnehmen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF15[/LF15/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten eines Admin Accounts
+3. Klicken auf Button "Admin Einstellungen"
+4. Klicken auf Button "Benutzer"
+5. Einen Admin in der Tabelle auswählen
+6. Auf Button "Adminrechte entnehmen" klicken
+erwartetes Ergebnis:: Benutzer verliert Adminrechte
+Ergebnis:: Benutzer verliert Adminrechte und Spalte "Admin" in der Tabelle steht auf "Nein"
+
+[[TF20]]
+== [[TF20]] /TF20/ Benutzer löschen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF16[/LF16/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten eines Admin Accounts
+3. Klicken auf Button "Admin Einstellungen"
+4. Klickern auf Button "Benutzer"
+5. Einen Benutzer in der Tabelle auswählen
+6. Auf Button "Benutzer löschen" klicken
+erwartetes Ergebnis:: Benutzer wird gelöscht
+Ergebnis:: Benutzer wird gelöscht un wird nicht mehr in der Tabelle angezeigt
+
+[[TF21]]
+== [[TF21]] /TF21/ Raum löschen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF17[/LF17/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten eines Admin Accounts
+3. Klicken auf Button "Admin Einstellungen"
+4. Klicken auf Button "Räume"
+5. Einen Raum in der Tabelle auswählen
+6. Auf Button "Raum löschen" klicken
+erwartetes Ergebnis:: Raum wird gelöscht
+Ergebnis:: Raum wird gelöscht und wird nicht mehr in der Tabelle angezeigt
+
+[[TF22]]
+== [[TF22]] /TF22/ Nutzerverbindung von Raum trennen
+[horizontal]
+Anwendungsfall:: link:../01_anforderungen/03_anwendungsfaelle#LF18[/LF18/]
+Beschreibung:: Folgende Schritte sind auszuführen
+1. Login in WebUI
+2. Anmelden mit gültigen Anmeldedaten eines Admin Accounts
+3. Klicken auf Button "Admin Einstellungen"
+4. Klicken auf Button "Räume"
+5. Einen Raum in der Tabelle auswählen
+6. Klicken auf Button "Ausgewählte Benutzer trennen"
+erwartetes Ergebnis:: Benutzer werden getrennt
+Ergebnis:: Benutzer werden getrennt. Spalte "Benutzerzahl" in der Tabelle steht auf 0

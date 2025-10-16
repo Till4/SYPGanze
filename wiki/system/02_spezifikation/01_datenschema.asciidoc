@@ -1,0 +1,33 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+
+
+[[sec:datenschema]]
+= [[sec:datenschema]] Datenschema
+
+NOTE: Detaillieren Sie hier die Attribute und Zusammenhänge der Daten, die Sie link:../01_anforderungen/04_daten[bereits] identifiziert haben. Sie können hierzu im begleitenden Text die betreffenden Abschnitt aus den Anforderungen referenzieren.
+Nutzen Sie hier UML-Klassendiagramme, Entity-Relationship-Diagramme oder andere geeignete Diagrammformen. Stellen Sie auch Daten dar, die ggf. in anderen Systemen gespeichert werden, aber mit den Daten ihres Systems zusammenhängen, machen Sie die Unterscheidung aber kenntlich (ggf. durch Erläuterungen im begleitenden Text). Die spätere Verteilung des Speicherung und Übertragung der Daten auf verschiedene Datenbanken(-Schemata), Dateien, Cloud-Buckets, Endpoints etc. spielt hier noch keine Rolle.
+
+
+
+
+image::Datenschema.png[width=300, alt="Datenschema"]
+
+
+
+
+Der MediaStream repräsentiert die eigentlichen Audio- und Videodaten, die zwischen Teilnehmern in einem WebRTC-basierten System ausgetauscht werden. In deinem System wird das Konzept eines MediaStreams durch Producer (ausgehende Datenströme) und Consumer (eingehende Datenströme) abgebildet. Ein Producer erzeugt Medieninhalte, wie beispielsweise Video oder Audio von der Kamera oder dem Mikrofon eines Teilnehmers, während ein Consumer diese Datenströme empfängt und für die Wiedergabe aufbereitet. MediaStreams sind zentral für die Kommunikation zwischen Peers und werden von Klassen wie Peer und RoomClient verwaltet, um eine nahtlose Audio- und Videoübertragung zu ermöglichen. Obwohl der MediaStream keine eigenständige Klasse im Code darstellt, bildet er das zentrale Konzept für die Verarbeitung von Medieninhalten im System.
+Falls sie weiters Wissen wollen über die Klassen findens sie unter link:../01_anforderungen/04_daten[daten]. + 
+ 
+
+
+*Anmerkung*: in der Datenbank werden nur Sitzungen und User gespeichert
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:laufzeitsicht]]
+= [[sec:laufzeitsicht]] Laufzeitsicht
+
+Darstellung des Zusammenspiels von Komponenten (Laufzeit)
+In den folgenden Sequenzdiagrammen wird das Zusammenspiel der verschiedenen Komponenten einer Anwendung zur Laufzeit dargestellt. Diese Diagramme veranschaulichen, wie Benutzeraktionen durch die verschiedenen Schichten der Architektur geleitet werden und wie dabei Daten zwischen Frontend, Backend und externen Diensten ausgetauscht werden.
+
+Die Diagramme sind aufgeteilt in spezifische Szenarien, um die Prozesse klar und verständlich darzustellen:
+
+*Login-Prozess* : Zeigt, wie Benutzerdaten durch Frontend und Backend fließen und in der Datenbank validiert werden.
+*Raum-Erzeugung und -Beitritt* : Beschreibt die Interaktion zwischen Benutzer, Mediasoup-Komponenten und Server bei der dynamischen Erzeugung und Verwaltung von Videokonferenzräumen.
+Registrierung: Erläutert, wie ein neuer Benutzer angelegt wird, einschließlich der Überprüfung und Speicherung der Daten.
+Jedes Diagramm legt den Fokus darauf, wie die Komponenten miteinander kommunizieren, welche Datenflüsse stattfinden und wie Erfolgs- und Fehlerszenarien verarbeitet werden. So wird die Laufzeitverhalten der Anwendung in ihrer Gesamtheit verständlich rübergebracht. +
+
+====
+
+*Beschreibung des Registierung eines Users*
+
+image::RegistierungSequenz.drawio_sequenz.png[height="800",width="800",alt="registierungProzess" ]
+
+Die Registrierung eines neuen Benutzers beschreibt, wie die eingegebenen Benutzerdaten zunächst überprüft werden, um sicherzustellen, dass der Benutzername nicht bereits existiert. Anschließend werden die Daten in der Datenbank gespeichert, und der Benutzer erhält eine Rückmeldung über den Erfolg oder mögliche Fehler. +
+
+*Beschreibung des Login eines Users*
+
+image:LoginSequenz.drawio_sequenz.png[height="800", width="800", alt="loginProzess"]
+
+Im Login-Prozess wird deutlich, wie die eingegebenen Anmeldedaten eines Benutzers von der Benutzeroberfläche (WebUI) an den Server weitergeleitet werden. Der Server prüft, ob der Benutzer in der Datenbank vorhanden ist, und validiert das Passwort. Abhängig vom Ergebnis wird der Benutzer entweder erfolgreich angemeldet oder erhält eine Fehlermeldung. +
+
+*Beschreibung der Raum erzeugung und beitritt*
+
+image:raum_erzeugung_beitritt_sequenz.drawio.png[ height ="800" , width="800" , alt="erzeugung und beitreten prozess"]
+
+
+
+Bei der Raum-Erzeugung und dem Beitritt zeigt das Diagramm, wie ein Benutzer durch die WebUI eine Anfrage an den Server sendet, um einen neuen Raum zu erstellen oder einem bestehenden Raum beizutreten. Der Server interagiert mit Mediasoup-Komponenten wie dem Router und dem Worker, um Räume zu verwalten und Ressourcen zuzuweisen. Dabei werden Produzenten für Streams wie Kamera- und Audio-Daten erstellt und Konsumenten generiert, um andere Teilnehmer im Raum zu empfangen
+
+
+
+
+

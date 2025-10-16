@@ -1,0 +1,25 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:kontext]]
+= [[sec:kontext]] Kontext
+
+image::Kontext.png[width="500",height="500",alt="Diagramm"]
+
+== System ConectNow
+Beschreibung::
+ConectNow ist das zuentwickelte Conferencingsystem.
+
+Schnittstelle ConectNow_WebUI::
+Diese Schnittstelle liefer die Benutzeroberfläche.
+
+== System Cloud Firestore
+Beschreibung::
+Cloud Firestore stellt die Datenbankanwendung dar.
+
+Schnitsctelle Firebase_WebUI::
+Diese Schnittstelle liefert eine Benutzeroberfläche für den Admin.
+
+Schnitstelle Firestore_API::
+Firestore_API ermöglicht zugriff Auf die Datenbank von Firebase.

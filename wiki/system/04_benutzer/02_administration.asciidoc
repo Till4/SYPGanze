@@ -1,0 +1,31 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+
+[[sec:administration]]
+= [[sec:administration]] Administration
+
+
+== *Log-Daten*
+Ein Administrator kann sich wie ein normaler Benutzer anmelden. Die Log-Daten werden in Firebase gespeichert. Besonders hierbei ist, dass sich der Administrator nicht an einer separaten Stelle anmelden muss, da er die gespeicherten Daten direkt über die Admin-Seite in Firebase einsehen kann. 
+Zusätzlich gibt es zahlreiche Log-Ausgaben über den Server, die idealerweise vom Administrator gestartet werden.
+
+== Konfigurationsparameter eines Admin
+
+Im Projekt befindet sich in der Datei `src/api.js` die Konstante `adminName`. Dieser Parameter definiert den **Über-Admin**. Der Benutzeraccount mit diesem Namen besitzt uneingeschränkte Administratorrechte und wird in der Admin-Ansicht der Benutzertabelle nicht angezeigt. Dadurch hat der Über-Admin stets die Berechtigung, andere Benutzer oder Admins zu löschen. Er selbst kann jedoch von keinem anderen Admin gelöscht werden.
+== House-Keeping-Aktivitäten
+
+Der Administrator kann nach eigenem Ermessen entscheiden, wann und welche Daten in der Datenbank bereinigt oder entfernt werden sollen. Es gibt keine vordefinierten Regeln für diese Aktivitäten.
+
+
+
+== WebUIs
+Der Admin hat nach dem Login einen speziellen Bereich (siehe Bild), in dem er Benutzer oder Räume einsehen und verwalten kann.
+
+image::AdminSeite_einstellungen.png[width="500",height="500",alt="Diagramm"]
+
+
+
+== Releases
+Releases für den Server bzw. die Endpunkte können in der Datei `api.js` eingefügt werden, sodass sie mit dem Client verbunden sind. Änderungen an der Benutzeroberfläche werden im `public`-Ordner vorgenommen.

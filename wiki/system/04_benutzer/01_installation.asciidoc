@@ -1,0 +1,20 @@
+= Installation
+
+== Voraussetzungen
+- Laden Sie Node.js herunter:
+  - Stellen Sie sicher, dass `node` und `npm` installiert sind.
+  - Empfohlene Versionen:
+    - Node.js: `v22.11.0`
+    - npm: `v10.9.0`
+
+== Code-Ausführung
+1. Führen Sie `npm install` aus, um alle benötigten Pakete herunterzuladen. **Hinweis**: Dieser Schritt ist nur einmal erforderlich, es sei denn, neue Pakete hinzugefügen.
+2. Starten Sie anschließend die Applikation mit `npm start`.
+3. Nach dem Start ist die Applikation erreichbar unter:
+   - `https://<lokaleIpAdresse>:3000`
+   - Oder unter einem Port/URL, den Sie in der Konfigurationsdatei definiert haben.
+
+
+== Anpassungen
+- Sie können in `ssl/` Ihren eigenen Schlüssel (Key) hinzufügen bzw. umändern.
+- Anpassungen wie IP-Adresse und andere Server-Einstellungen können in `configs/configServer.js` vorgenommen werden.

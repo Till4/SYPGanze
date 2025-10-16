@@ -1,0 +1,145 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:anwendungsfaelle]]
+= Anwendungsfälle
+
+image::AnwendungsfallDiagramm.png[width=300, alt="Anwendungsfalldiagramm"]
+
+
+[[sec:LF01]]
+== [[sec:LF01]] /LF01/ Bildschrim teilen
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der User kann in einer Sitzung durch das Klicken auf einen Button seinen Bildschirm teilen und ausschalten.
+
+[[sec:LF02]]
+== [[sec:LF02]] /LF02/ Bildschirm ausschalten
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Falls der Benutzer seinen Bildschirm durch einen Button eingeschaltet hat , kann er durch den gleichen Button diesen wieder ausschalten jedoch kann dies nur funktionieren, wenn der User seinen Bildschirm teilt. 
+
+[[sec:LF03]]
+== [[sec:LF03]] /LF03/ Audio einschlaten
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der Teilnehmer hat die Möglichkeit, durch Betätigung eines Audio-Buttons seine Audioübertragung in der Sitzung freizugeben, sodass seine Stimme für alle anderen Teilnehmer hörbar wird.
+
+
+[[sec:LF04]]
+== [[sec:LF04]] /LF04/ Audio ausschalten
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der Teilnehmer kann über denn Audio-Button, der zum Aktivieren des Mikrofons dient, seine Audioübertragung wieder deaktivieren, sodass er für die anderen Sitzungsteilnehmer nicht mehr hörbar ist.
+
+[[sec:LF05]]
+== [[sec:LF05]] /LF05/ Video einschalten
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der Teilnehmer einer Sitzung kann durch klicken auf einen Video-Button sein Video einschalten.
+
+[[sec:LF06]]
+== [[sec:LF06]] /LF06/ Video ausschalten
+[horizontal]
+Priorität:: Muss
+Akteu:: User 
+Beschreibung:: Der Teilnehmer einer Sitzung kann durch Video-Button wie bei LF05 sein Video wieder ausschalten.
+
+[[sec:LF07]]
+== [[sec:LF07]] /LF07/ Raum erstellen
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der Benutzer kann einen neuen Raum erstellen, indem er einen entsprechenden Button betätigt. Dabei wird er aufgefordert, einen Raumnamen anzugeben und optional ein Passwort zu setzen, um den Zugang zum Raum zu schützen.
+
+[[sec::LF08]]
+== [[sec::LF08]] /LF08/ Raum beitretten
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: Der Benutzer kann einer Sitzung beitreten, indem er auf den Namen des gewünschten Raums klickt. Nach dem Beitritt wird sein Status automatisch auf „Beschäftigt“ gesetzt
+
+[[sec::LF09]]
+== [[sec::LF09]] /LF09/ Raum verlassen
+[horizontal]
+Priorität:: Muss
+Akteur:: User
+Beschreibung:: der Teilnehmer kann durch Klicken auf einen Button die Sizung verlassen und landet dann wieder auf der Hauptseite mit allen verfügbaren Räumen und sein Status ändert sich auf "Verfügbar". 
+
+[[sec::LF10]]
+== [[sec::LF10]] /LF10/ Registierung
+[horizontal]
+Priorität:: Kann
+Akteur:: User
+Beschreibung:: Der Benutzer kann durch die Eingabe eines Passworts und Benutzernamens ein Konto erstellen (falls LF10 realisiert wird, muss LF11 auch realisiert werden)
+
+[[sec::LF11]]
+== [[sec::LF11]] /LF11/Konto löschen
+[horizontal]
+Priorität:: Kann
+Akteur:: User
+Beschreibung:: Der Benutzer kann sein Konto löschen und somit das System nicht mehr nutzen bis wieder ein Konto angelegt wird (falls LF11 realisiert wird muss LF10 auch realsiert werden) 
+
+
+[[sec::LF12]]
+== [[sec::LF12]] /LF12/Login
+Beschreibung::
+[horizontal]
+Priorität:: Kann
+Akteur:: User
+Beschreibung:: Der Benutzer kann sich in sein Konto einloggen mit Benutzername und Passwort, dadurch wechselt sein Status in „Verfügbar“ ändert und sieht die Hauptseite.
+
+[[sec::LF13]]
+== [[sec::LF13]] /LF13/ Chat schreiben
+[horizontal]
+Priorität:: muss
+Akteur:: User
+Beschreibung:: Der Teilnehmer kann in einem Chat schreiben der einer Sitzung zugeordnet ist
+
+
+
+
+[[sec::LF14]]
+== [[sec::LF14]] /LF14/ Adminrechte verteilen
+[horizontal]
+Priorität:: kann
+Akteur:: Admin
+Beschreibung:: Der Admin kann über eine übersichtliche Tabelle gezielt Benutzer auswählen und ihnen Adminrechte zuweisen.
+
+
+[[sec::LF15]]
+== [[sec::LF15]] /LF15/ Adminrechte Entnehmen
+[horizontal]
+Priorität:: kann
+Akteur:: Admin
+Beschreibung:: Der Admin kann über eine Tabelle bestehende Admins auswählen und ihnen die Adminrechte entziehen
+
+[[sec::LF16]]
+== [[sec::LF16]] /LF16/ Admins/Users löschen
+[horizontal]
+Priorität:: kann
+Akteur:: Admin
+Beschreibung:: Der Admin kann mithilfe einer Tabelle gezielt Admins oder User aus der Plattform entfernen. Die Tabelle zeigt eine Übersicht aller registrierten Personen.
+
+
+
+[[sec::LF17]]
+== [[sec::LF17]] /LF17/ Räume löschen
+[horizontal]
+Priorität:: kann
+Akteur:: Admin
+Beschreibung:: Der Admin hat die Möglichkeit, Räume über eine Tabelle zu verwalten und bei Bedarf zu löschen. Die Tabelle zeigt eine Liste aller existierenden Räume, inklusive relevanter Informationen wie Raumnamen, Teilnehmerzahl und Ersteller.
+
+
+[[sec::LF18]]
+== [[sec::LF18]] /LF18/ Teilnehmer aus Räum entferne
+[horizontal]
+Priorität:: kann
+Akteur:: Admin
+Beschreibung:: Der Admin kann über eine Tabelle die Teilnehmer eines Raums verwalten und bei Bedarf einzelne Personen aus dem Raum entfernen. Die Tabelle bietet eine Übersicht aller Teilnehmer im Raum und erlaubt eine gezielte Auswahl.

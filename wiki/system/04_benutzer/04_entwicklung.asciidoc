@@ -1,0 +1,42 @@
+[[sec:entwicklung]]
+= [[sec:entwicklung]] Entwicklung
+
+[[sec:voraussetzungen]]
+== [[sec:voraussetzungen]] Voraussetzungen
+
+* Node.js >v21.7.1 
+* Git >2.42.0
+* Code Editor (z.B. Visual Studio Code)
+* npm >10.5.0
+
+[[sec:build_run]]
+== [[sec:build_run]] Build and Run
+
+Der Quell code kann über einen Clone von GitLab bezogen werden:
+```
+git clone https://gitlab.nt.fh-koeln.de/gitlab/syp24/team07.git
+```
+Das Project kann mit folgendem befehl Installiert werden:
+```
+npm install
+```
+Um das System zu starten wird folgender Befehl ausgeführt:
+```
+npm start 
+```
+Über den Browser kann dann auf das System zugegriffen werden unter:
+```
+https://localhost:3000
+```
+
+Jegliche Parameter können in den Dateien im config Ordner geändert werden.
+Dazu gehören die Parameter für die Datenbankverbindung zu FireBase, sowie für die MediaSoup Verbindungen. Zudem kann der ssl-key geändert werden.
+
+[[sec:codebase]]
+== [[sec:codebase]] Code-Base
+
+Im 'public' Ordner befinden sich die html, javascript und css Dateien für das Frontend. Dabei ist das Verzeichnis public/admin speziell für das Fronted der admin Operrationen. 
+Im 'src' Ordner befinden sich die Javascript Dateien, die für das Backend so wie.  
+
+
+

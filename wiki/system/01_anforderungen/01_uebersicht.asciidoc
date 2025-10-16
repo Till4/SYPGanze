@@ -1,0 +1,16 @@
+[[sec:uebersicht]]
+= [[sec:uebersicht]] Übersicht
+
+
+
+[[sec:einsatzzweck]]
+== [[sec:einsatzzweck]] Einsatzzweck
+In der heutigen digitalen Welt ist eine effiziente Echtzeit-Kommunikation von zentraler Bedeutung. Im Rahmen dieses Projekts entwicklen wir eine „*Conferencing Web-Applikation*“, die es Benutzern ermöglicht, virtuelle Räume zu erstellen. In diesen Räumen können die Teilnehmer in Echtzeit Audio- und Videoinhalte miteinander austauschen und gleichzeitig über eine integrierte Chat-Funktion kommunizieren. +
+Die Anwendung wird plattformunabhängig gestaltet, sodass sie sowohl auf PCs als auch auf mobilen Endgeräten (wie Smartphones) verwendet werden kann. Darüber hinaus bietet die Applikation zusätzliche Features wie Screensharing. +
+Das Ziel dieses Projektes  besteht darin, eine leicht verwendbare Benutzeroberfläche zu schaffen , die die kommunikation zwischen Usern erleichtert und gleichzeitig eine hohe Funktionalität bietet.
+
+[[sec:technik]]
+== [[sec:technik]] Technik
+Das Projekt ist eine Web-Applikation mit einer Frontend- und Backend-Architektur. Das Frontend wird mit HTML5, CSS3 und JavaScript entwickelt, während das Backend auf Node.js basiert. Zur Echtzeit-Kommunikation zwischen Client (Browser) und Server werden WebSockets genutzt.
+Die WebRTC-Technologie ermöglicht die Übertragung von Audio und Video. Der Node.js-Server übernimmt in Kombination mit WebSockets die Signalisierung (Austausch von Verbindungsdaten wie IP-Adressen und Medienbeschreibungen), um direkte WebRTC-Verbindungen zwischen Benutzern aufzubauen.
+Zusätzlich wird WebRTC für Screen-Sharing verwendet, während die Chat-Funktion über WebSockets implementiert wird. Zur Optimierung der Medienübertragung kommt eine SFU (Selective Forwarding Unit), wie Mediasoup, zum Einsatz. Die SFU erleichtert die skalierbare Verteilung von Video- und Audiostreams, indem sie Mediendaten zentral weiterleitet und Bandbreitenanforderungen auf Benutzerseite reduziert.

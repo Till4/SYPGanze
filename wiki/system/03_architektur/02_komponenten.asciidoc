@@ -1,0 +1,76 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+
+[[sec:komponenten]]
+= [[sec:komponenten]] Komponenten 
+
+image::Komponenten.png[width="600",height="500",alt="Diagramm"]
+
+== Komponente  `WebUI`
+
+Verantwortlichkeit::
+Diese Komponente ist für die Graphischebenutzeroberfläche im Browser zuständig. Der Nutzer kann über HTTP-Requests mit der GUI Kommunizieren.
+
+Schnittstelle `ConnectNow_WebUI`::
+Die Schnittstelle 
+
+Realisierung::
+Die Komponente wird Realisiert durrch verschiedene HTML Dokumente und deren zugehörigen Scripts.
+
+== Komponente  `Mediasoup-Client`
+
+Verantwortlichkeit::
+Der `Mediasoup-Client` ist für die Verwaltung der **WebRTC-Verbindungen** auf der Client-Seite zuständig. Er stellt die notwendigen Schnittstellen bereit, um mit dem MediasoupSFU auf der Serverseite zu kommunizieren und Medienströme zu senden oder zu empfangen.
+
+Schnittstelle Mediasoup-ClientAPI::
+Die `Mediasoup-ClientAPI` stellt Methoden und Ereignisse bereit, um die WebRTC-Funktionalitäten auf der Client-Seite zu steuern und mit dem Server zu kommunizieren.
+
+Realisierung::
+
+s . <<sec:mediasoup_komponenten,«Mediasoup»-Komponente+>>
+
+== Komponente  `App`
+
+Verantwortlichkeit:: 
+Die Komponente `App` ist für den zentralen **Node.JS Server** verantwortlich. Ausserdem stellt er den Signaling server da.
+
+Schnittstelle Socket.IO::
+Über die `Socket.IO` schnittstelle können Client in echtzeit mit dem Server Kommunizieren.
+
+Realisierung::
+Die `App`-Komponente wird in Node.js mit folgenden Technologien realisiert:  
+**Socket.IO**: Für Echtzeitkommunikation zwischen Client und Server.  
+**Express**: Für HTTP-Endpunkte, die Statusabfragen und Verwaltungsoperationen ermöglichen.  
+**Mediasoup**: Zur Verwaltung der Medienströme in Zusammenarbeit mit der `MediasoupSFU`-Komponente.  
+
+== Komponente  `MediasoupSFU`
+
+Verantwortlichkeit::
+Die Komponente `MediasoupSFU` ist der zentrale Medienserver der Anwendung. Sie verwaltet die WebRTC-Verbindungen zwischen den Teilnehmern und sorgt für die effiziente Weiterleitung von Audio- und Videodaten.  
+
+Schnittstelle `Mediasoup_API`::
+Die Schnittstelle `Mediasoup_API` dient zur Steuerung der WebRTC-Verbindungen und zum Management der Audio- und Videoübertragung zwischen dem Client und dem Server.
+
+Realisierung::
+s . <<sec:mediasoup_komponenten,«Mediasoup»-Komponente+>>
+
+== Komponente  `FirestoreManager`
+
+Verantwortlichkeit:: 
+Der `FirestoreManager` ist für die Verwaltung der Verbindung zur Google Firestore-Datenbank verantwortlich. **Datenbankoperationen:** Führt CRUD-Operationen (Erstellen, Lesen, Aktualisieren, Löschen) in der Firestore-Datenbank durch.  
+
+Schnittstelle `FirestoredataAccess`::
+Die Schnittstelle `FirestoredataAccess` stellt die Methoden zur Interaktion mit Firestore zur verfügung.
+
+Realisierung::
+Die Komponente wird in `Node.js` mit der offiziellen Firestore-Client-Bibliothek umgesetzt.  
+**Verwendete Technologien:**  
+**`firebase-admin`**: Für die serverseitige Authentifizierung und Datenbankzugriffe.  
+
+[[sec:mediasoup_komponenten]]
+== «Mediasoup»-Komponenten
+
+Realisierung::
+Die Komponenten basiert auf der offiziellen `mediasoup`-Bibliothek. Diese wird in JavaScript implementiert. Die Signalisierung erfolgt über WebSocket-Verbindungen (mithilfe von Socket.IO).

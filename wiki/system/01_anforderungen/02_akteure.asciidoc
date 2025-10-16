@@ -1,0 +1,28 @@
+[[sec:akteure]]
+= [[sec:akteure]] Akteure
+
+
+User::
+*Registrierung:* User können ein Konto erstellen, um sich zu registrieren. +
+*Login:*  Um Räume zu erstellen oder beizutreten, müssen sich Nutzer zunächst einloggen. +
+*Profil bearbeiten:*  User können ihr Profil anpassen, indem sie ihren Namen oder ihr Passwort ändern. +
+*Konto löschen:* User können ihr erstelltes Konto jederzeit löschen. +
+*Raum erstellen:* User haben die Möglichkeit, eigene Räume zu erstellen. +
+*Raum beitreten:* User können Räumen beitreten und über Audio und Video miteinander kommunizieren. +
+*Raum verlassen:* User können Räume jederzeit verlassen. +
+*Video einschalten:* User können in den Räumen ihr Video aktivieren. +
+*Video ausschalten:* User können ihr Video in den Räumen deaktivieren. +
+*Audio einschalten:* User können in den Räumen ihr Audio aktivieren  +
+*Audio ausschalten:* User können ihr Audio in den Räumen deaktivieren. +
+*Bildschirm teilen:* User können ihren Bildschirm freigeben, um Präsentationen oder Inhalte mit anderen zu teilen. +
+*Bildschirmfreigabe beenden:* User önnen die Freigabe ihres Bildschirms jederzeit stoppen. +
+*Chat schreiben:* Nutzer können in den Räumen Nachrichten über den Chat senden und empfangen. +
+
+Admin::
+Admin kann das gleiche wie User machen und hat zusätliche funktionen (siehe unten) +
+*Teilnehmer löschen:* Admins können über eine Tabelle, registrierte User aus der Plattform entfernen. +
+*Teilnehmer Admin-Rechte geben:* Admins können über eine Tabelle anderen Teilnehmern Administratorrechte zuweisen, wodurch diese dieselben erweiterten Rechte erhalten. +
+*Teilnehmer Admin-Rechte entziehen:* Admins können über eine Tabelle bestehenden ihre Administratorrechte wieder entziehen. +
+*Räume löschen:* Admins haben die Möglichkeit über eine Tabelle, Räume vollständig zu entfernen, auch wenn diese von einem anderen User erstellt wurden.
+*Teilnehmer aus Räume entfenren:* Admin können über eine Tabelle, Teilnehmer aus dem Raum entfernen
+

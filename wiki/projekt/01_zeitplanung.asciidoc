@@ -1,0 +1,144 @@
+[[sec:zeitplanung]]
+= [[sec:zeitplanung]] Zeitplanung
+
+Für unser Projekt ConnectNow wird eine zeitliche Übersicht erstellt, die alle wichtigen Meilensteine und Aufgaben des Projekts abbildet. Dieses Gantt-Diagramm ermöglicht es, den Fortschritt des Projekts klar nachzuvollziehen und sicherzustellen, dass alle Phasen termingerecht abgeschlossen werden. Die Übersicht wird regelmäßig aktualisiert, um jederzeit den aktuellen Stand und mögliche Anpassungen der Zeitplanung sichtbar zu machen.
+
+[plantuml, anwendungsfaelle.puml]
+----
+@startgantt
+hide ressources footbox
+Project starts 2024-10-04
+[Anforderung schreiben] starts 2024-10-04
+[Übersicht] on {Chris} starts 2024-10-04 
+[Übersicht] on {Chris} lasts 15 days
+[Akteure] on {Said} lasts 15 days
+[Anwendungsfälle] on {Chris, Berdan} lasts  15 days
+[Daten] on {Said} lasts 15 days
+[Qualitätsanforderungen] on {Said} lasts 15 days
+[Randbedingungen] on {Said} lasts 15 days
+[Meeting1] happens 2024-10-18
+[Meeting1] is colored in orange
+[Verbesserungen] starts 2024-10-19
+[Verbesserungen] ends 2024-10-22
+[Verbesserungen] is colored in yellow
+[Anforderung schreiben] ends 2024-10-23
+[Anforderung schreiben] is colored in SeaGreen
+[MS1] happens 2024-10-25
+[MS1] is colored in Red
+
+[Spezifikation & Projektplanung] starts 2024-10-28
+[Datenschema] on {Berdan} starts at 2024-10-30
+[Datenschema] on {Berdan} lasts 10 days
+[Verhalten] on {Said, Chris} starts at 2024-10-30
+[Verhalten] on {Said, Chris} lasts 10 days
+[Schnittstellen] on {Till} starts at 2024-10-30
+[Schnittstellen] on {Till} lasts 10 days
+[Meeting2] happens 2024-11-08
+[Meeting2] is colored in orange
+[Spezifikation & Projektplanung] ends 2024-11-13
+[Spezifikation & Projektplanung] is colored in SeaGreen
+[MS2] happens 2024-11-15 
+[MS2] is colored in Red
+[Verbesserungen2] starts 2024-11-08
+[Verbesserungen2] ends 2024-11-13
+[Verbesserungen2] is colored in yellow
+
+[Prototyp & Architektur] starts 2024-11-18
+[Kontext] on {Till} starts at 2024-11-18
+[Kontext] on {Till} lasts 25 days
+[Komponenten] on {Till} starts at 2024-11-18
+[Komponenten] on {Till} lasts 25 days
+[Laufzeitsicht] on {Chris} starts at 2024-11-18
+[Laufzeitsicht] on {Chris} lasts 25 days
+[Verteilung] on {Berdan, Said} starts at 2024-11-18
+[Verteilung] on {Berdan, Said} lasts 25 days
+
+[lernen code implementierungen] on {Chris, Berdan, Till, Said} starts at 2024-11-07
+[lernen code implementierungen] on {Chris, Berdan, Till, Said} lasts 22 days
+[lernen code implementierungen] is colored in blue
+
+[Code besprechnungen] on {Chris, Berdan, Till, Said} starts at 2024-11-29
+[Code besprechnungen] on {Chris, Berdan, Till, Said} lasts 2 days
+[Code besprechnungen] is colored in yellow
+
+
+[UserAccountService] on {Chris} starts at 2024-12-01
+[UserAccountService] on {Chris} lasts 12 days
+
+[FirestoreManager] on {Chris} starts at 2024-12-01
+[FirestoreManager] on {Chris} lasts 12 days
+
+[WebUI] on {Said} starts at 2024-12-01
+[WebUI] on {Said} lasts 12 days
+
+[Mediasoup-Client] on {Till} starts at 2024-12-01
+[Mediasoup-Client] on {Till} lasts 12 days
+
+[App] on {Chris, Berdan} starts at 2024-12-01
+[App] on {Chris, Berdan} lasts 12 days
+
+[MediasoupSFU] on {Berdan} starts at 2024-12-01
+[MediasoupSFU] on {Berdan} lasts 12 days
+
+[Präsi Vorbereitung] on {Chris, Berdan, Till, Said} starts at 2024-12-12
+[Präsi Vorbereitung] on {Chris, Berdan, Till, Said} lasts 8 days
+[Präsi Vorbereitung] is colored in yellow
+
+
+[Meeting3] happens 2024-12-13
+[Meeting3] is colored in orange
+[Prototyp & Architektur] ends 2024-12-18
+[Prototyp & Architektur] is colored in SeaGreen
+[MS3 Präsentation] happens 2024-12-20
+[MS3 Präsentation] is colored in Red
+
+[Endprodukt] starts 2024-12-22
+[Installation] on {Berdan} starts at 2024-12-25
+[Installation] on {Berdan} lasts 24 days
+[Administration] on {Berdan} starts at 2024-12-25
+[Administration] on {Berdan} lasts 24 days
+[Benutzung] on {Berdan} starts at 2024-12-25
+[Benutzung] on {Berdan} lasts 24 days
+[Entwicklung] on {Till} starts at 2024-12-25
+[Entwicklung] on {Till} lasts 24 days
+
+[Chat funktion] on {Till} starts at 2024-12-25
+[Chat funktion] on {Till} lasts 24 days
+[Chat funktion] is colored in lightgreen
+[Teilnehmer-Liste] on {Till} starts at 2024-12-25
+[Teilnehmer-Liste] on {Till} lasts 24 days
+[Teilnehmer-Liste] is colored in lightgreen
+[Admin hinzufügen] on {Berdan} starts at 2024-12-25
+[Admin hinzufügen] on {Berdan} lasts 24 days
+[Admin hinzufügen] is colored in lightgreen
+[Styling anpassungen] on {Said , Chris} starts at 2024-12-25
+[Styling anpassungen] on {Said , Chris} lasts 24 days
+[Styling anpassungen] is colored in lightgreen
+[Mikro] on {Berdan} starts at 2024-12-25
+[Mikro] on {Berdan} lasts 24 days
+[Mikro] is colored in lightgreen
+[screen sharing] on {Said} starts at 2024-12-25
+[screen sharing] on {Said} lasts 24 days
+[screen sharing] is colored in lightgreen
+[login/ registrieren] on {Chris} starts at 2024-12-25
+[login/ registrieren] on {Chris} lasts 24 days
+[login/ registrieren] is colored in lightgreen
+[Datenbank Management] on {Chris} starts at 2024-12-25
+[Datenbank Management] on {Chris} lasts 24 days
+[Datenbank Management] is colored in lightgreen
+[Räume erstellen/ Beitreten] on {Berdan , Said} starts at 2024-12-25
+[Räume erstellen/ Beitreten] on {Berdan , Said} lasts 24 days
+[Räume erstellen/ Beitreten] is colored in lightgreen
+[Mobile Anpassung] on {Said} starts at 2024-12-25
+[Mobile Anpassung] on {Said} lasts 24 days
+[Mobile Anpassung] is colored in lightgreen
+
+[Meeting4] happens 2025-01-17
+[Meeting4] is colored in orange
+[Endprodukt] ends 2025-01-22
+[Endprodukt] is colored in SeaGreen
+[MS4 Präsentation Endprodukt] happens 2025-01-22
+[MS4 Präsentation Endprodukt] is colored in Red
+
+@endgantt
+----

@@ -1,0 +1,91 @@
+ifndef::imagesdir[]
+:imagesdir: ../../abbildungen
+endif::[]
+
+[[sec:verhalten]]
+= Verhalten
+
+Das vorliegende Dokument beschreibt das Verhalten des ConnectNow in Bezug auf seine Hauptfunktionen und Interaktionen mit den Benutzern. Ziel des Systems ist es, dass Benutzer mit verschiedenen Endgeräten sich unterhalten, chatten oder Inhalte austauschen können. Um dieses Ziel zu erreichen, umfasst das System verschiedene Funktionalitäten, die dem Benutzer ermöglichen, Aufgaben wie das Teilen des Bildschirms, das Ein- und Ausschalten von Audio sowie das Verwalten von Teilnehmern effizient durchzuführen.
+
+Diese Verhaltensbeschreibung fokussiert sich auf die einzelnen Anwendungsfälle und beschreibt den Ablauf sowie die Interaktionen, die notwendig sind, um jede Funktion auszuführen. Im Mittelpunkt stehen die Anforderungen, die das System erfüllen muss, um die Benutzerbedürfnisse zu bedienen und ein reibungsloses Nutzungserlebnis zu gewährleisten. Jedes Szenario wird im Detail beschrieben, einschließlich der Aktionen, Bedingungen und Systemreaktionen, um eine vollständige Übersicht über das erwartete Verhalten des Systems zu bieten.
+
+[[sec:identifizierung]] 
+= Identifizieren der Anwendungsbereiche
+
+Die Anwendungsfälle sind gruppiert nach übergeordneten Bereichen, um die Hauptfunktionen des Systems besser zusammenzufassen. +
+
+|===
+|Benutzerverwaltung |Kommunikation und Kollaboration |Sitzungsverwaltung|Admin
+
+|LF10 - Registrierung |LF01 - Bildschirm teilen  |LF07 - Raum erstellen| LF16 - Admins/Users löschen
+|LF11 - Konto löschen |LF03 - Audio einschalten  |LF08 - Raum verlassen|LF17/ Räume löschen
+|LF13 - Login |LF05 - Video einschalten  | LF01_02 Bildschrim teilen/ausschalten|LF18 - Teilnehmer aus Räum entferne
+|   | | | LF14/LF15 - Adminrechte verteilen/entnehmen|
+|===
+
+[[sec:Diagramme_LFs]]
+= Verhalten der Systemfunktionen
+
+*LF01 / LF02 : User möchte seinen Bildschirm freigeben/teilen und nach einer gewissen Zeit das Bildschirm freigeben beenden* +
+
+image::LF01_LF02_Bildschirm_teilen_ausschalten.drawio.png[width="600",height="600",alt="LF01/02"]
+---
+*LF03 / LF04 : User möchte sein Mikrofon einschalten und nach einer gewissen Zeit stummschalten können.* +
+
+image::LF03-04_Mikrofon_ausschalten_einschalten.drawio.png[width="600",height="600",alt="LF03/04"]
+---
+*LF05 / LF06 : User möchte sein Video einschalten und nach einer gewissen Zeit wieder ausschalten* +
+
+image::LF05-06_Video_einschalten_ausschalten.drawio.png[width="600",height="600",alt="LF05/06"]
+---
+*LF07 / LF09 : Dem User soll es möglich sein, einen Raum zu erstellen und diesen nach einer unbestimmten Zeit wieder zu verlassen* +
+
+image::LF07_09_Raum_erstellt_verlassen.drawio.png[width="600",height="600",alt="LF07/09"]
+---
+*LF08 / LF13 : Dem User soll es möglich sein, einem bereits existierenden Raum beizutreten* +
+
+image::LF08_13_Raum_Beigetreten.drawio.png[width="600",height="600",alt="LF08/14"]
+---
+*LF10 : Der User möchte sich auf ConnectNow registrieren, falls noch nicht angemeldet* +
+
+image::LF10_Registrierung.drawio.png[width="600",height="600",alt="LF10"]
+---
+*LF11 : Der User möchte sein Konto auf ConnectNow löschen* +
+
+image::LF11_Konto_Loeschen.drawio.png[width="600",height="600",alt="LF11"]
+---
+
+*LF12 : Der User möchte sich mit seinem bereits existierenden Account anmelden* +
+
+image::LF12_User_Login.drawio.png[width="600",height="600",alt="LF13"]
+---
+
+
+
+*LF14/LF15: Der Admin will Usern Adminrechte geben oder Admins rechte entnehmen*
+
+image::Lf14_LF15_adminrechte_verteilen_entnehmen.png[width="600",height="600",alt="LF14/15"]
+
+---
+*LF16: Der Admin kann User oder Admins löschen*
+
+image::LF16_Admin_user_loeschen.png[width="600",height="600",alt="LF16"]
+
+---
+*LF17: Der Admin kann ein Raum löschen worduch alle Teilnehmer entfernt wurden*
+
+image::LF17_Raum_loeschen.png[width="600",height="600",alt="LF17"]
+
+---
+
+*LF18: der Teilnehmer kann Teilnehmer die in einer Sitzung sind entfernen*
+
+image::lf18_teilnehmer_raum_entfernen.png[width="600",height="600",alt="LF18"]
+
+---
+
+*Allgemeine Beschreibung des Systems anhand eines Aktivitäten Diagramms in abgekürzter Version*
+
+image::AllgemeineDarstellung_des_Systems.drawio.png[width="600",height="600",alt="Gesamtstruktur des Systems in Form eines Aktivitätsdiagramms"]
+---
+

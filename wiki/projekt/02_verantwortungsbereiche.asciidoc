@@ -1,0 +1,41 @@
+[[sec:verantwortungsbereiche]]
+= [[sec:verantwortungsbereiche]] Verantwortungsbereiche
+
+NOTE: Zum Teil ergeben sich Verantwortungsbereiche aus der link:zeitplanung#fig:zeitplanung[Zeitplanung] oben. Manche Verantwortungsbereiche münden aber in wiederkehrenden Aufgaben und lassen sich daher schlecht in eine einer Darstellung wie in der obigen link:zeitplanung#fig:zeitplanung[Zeitplanung] unterbringen. Listen Sie die Verantwortungsbereiche und zugehörige Verantwortliche daher zusätzlich auf.
+Verteilen Sie hierbei insbesondere auch sämtliche, selbst zu implementierende Komponenten, die Sie in der link:../03_architektur/02_komponenten[Komponenten-Beschreibung] identifiziert haben. Achten Sie bitte wiederum darauf, dass Sie hier die Komponenten exakt so nennen, wie in der link:../03_architektur/02_komponenten[Komponenten-Beschreibung]. 
+
+|===
+| Verantwortlicher | Verantwortlichkeitsbereich
+
+|Christopher Okoh   | UserAccountService
+|Christopher Okoh  | FirestoreManager
+|Said Cetin| WebUI (Css, html)
+|Till Willhelm | Mediasoup-Client
+|Christopher Okoh, Berdan Tasyurdu| App
+|Berdan Tasyurdu| MediasoupSFU
+|Christopher Okoh| Übersicht
+|Said| Akteure
+|Berdan Tasyurdu,Christopher Okoh|Anwendungsfälle
+|Berdan Tasyurdu, Said Cetin| Daten
+|Till Willhelm|Qulitätsanforderungen
+|Till Willhelm| Randbedingungen
+|Berdan Tasyurdu|Datenschema
+|Said Cetin, Christopher Okoh|Verhlaten
+|Till Willhelm| Schnittstellen
+|Till Willhelm| Kontext
+|Till Willhelm| Komponenten
+|Christopher Okoh| Laufzeitsicht
+|Berdan Tasyurdu, Said Cetin| Verteilung
+|Berdan Tasyurdu| Installation
+|Berdan Tasyurdu| Administration
+|Berdan Tasyurdu| Benutzung
+|Till Willhelm| Entwicklung
+|Till Willhelm| Chat funktion implementieren 
+|Till Willhelm| Teilnehmer-Liste implementieren
+|Berdan Tasyurdu| Admin hinzufügen und alle Admin funktionen
+|Berdan Tasyurdu, Said Cetin| Mikro/Screen-Sharing
+|Said| Mobile Anpassung
+
+
+
+|===

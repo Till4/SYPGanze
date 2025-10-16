@@ -1,0 +1,28 @@
+[[sec:daten]]
+= [[sec:daten]] Daten
+
+Es geht in diesem Abschnitt weniger um die technisch Ausgestaltung der Daten, sondern in erster Linie darum, 
+ein gemeinesames Verständnis
+der verschiedenen, für das System relevanten Entitätstypen und deren Zusammenhänge herzustellen.
+
+[[sec:LD01]]
+== [[sec:LD01]] /LD01/ User
+Die User-Klasse dient als Repräsentation eines Benutzers innerhalb der Anwendung und verwaltet alle relevanten Informationen, die für die Teilnahme an der Plattform erforderlich sind. Dazu gehören grundlegende Details wie ein eindeutiger Benutzername, ein Passwort für die Authentifizierung. Diese Klasse ist besonders wichtig, um eine klare Trennung zwischen den verschiedenen Teilnehmern zu gewährleisten und sie eindeutig zu identifizieren. Darüber hinaus ermöglicht die User-Klasse die Integration von Benutzerinformationen in weitere Systeme Benachrichtigungsfunktionen. Sie bildet somit die Basis für die Organisation und Verwaltung der Teilnehmer einer Plattform.
+
+[[sec:LD02]]
+== [[sec:LD02]] /LD02/ RoomClient
+Die RoomClient-Klasse ist der zentrale Baustein für die Interaktion eines Benutzers mit der Plattform auf der Client-Seite. Sie verbindet die Benutzeroberfläche mit der darunterliegenden Technologie und ermöglicht es den Nutzern, sich nahtlos in Räume einzuloggen, Medien wie Video und Audio zu übertragen und mit anderen Teilnehmern zu interagieren. RoomClient ist essenziell für die Steuerung der Benutzererfahrung, indem sie es ermöglicht, Räume zu betreten, Verbindungen herzustellen und Medieninhalte dynamisch zu verwalten. Darüber hinaus bietet diese Klasse eine Grundlage für eine intuitive Benutzerinteraktion, da sie die Komplexität der technischen Prozesse wie Verbindungsaufbau und Medienverwaltung abstrahiert. Sie stellt sicher, dass Benutzer die volle Kontrolle über ihre Medieninhalte haben, während sie gleichzeitig die nötige Infrastruktur bereitstellt, um diese Inhalte an andere Teilnehmer weiterzugeben.
+
+[[sec:LD03]]
+== [[sec:LD03]] /LD03/ Room
+Die Room-Klasse ist das Herzstück der gesamten Kommunikationsinfrastruktur. Sie stellt einen virtuellen Raum bereit, in dem sich mehrere Peers(Teilnehmer) versammeln können, um miteinander zu interagieren. Dabei verwaltet die Room-Klasse die Verbindung zwischen den Teilnehmern und sorgt dafür, dass Medienströme wie Video, Audio und Bildschirmfreigaben effizient verteilt werden. Sie bietet eine zentrale Organisationseinheit, die es ermöglicht, mehrere Teilnehmer gleichzeitig zu synchronisieren und ihre Interaktion zu steuern. Neben der technischen Funktion als Verteiler von Medienströmen schafft die Room-Klasse auch die Grundlage für die soziale Interaktion zwischen den Teilnehmern. Sie sorgt dafür, dass ein Teilnehmer nicht nur Inhalte senden, sondern auch die Inhalte anderer Teilnehmer empfangen und darauf reagieren kann. Dies macht sie unverzichtbar für jede Art von Gruppenkommunikation.
+
+
+[[sec:LD04]]
+== [[sec:LD04]] /LD04/Peer
+Die Peer-Klasse repräsentiert einen Teilnehmer in einem Kommunikationssystem, das auf WebRTC basiert. Sie ist ein zentraler Bestandteil, um die direkte Interaktion zwischen Nutzern zu ermöglichen, indem sie die Verbindung und den Austausch von Medien wie Audio und Video koordiniert. Diese Klasse fungiert als Schnittstelle zwischen einem Benutzer und der darunterliegenden Infrastruktur, indem sie sicherstellt, dass die Medienströme eines Teilnehmers sowohl gesendet als auch empfangen werden können. Ein Peer steht stellvertretend für eine Instanz innerhalb eines Kommunikationsraums und ist unerlässlich, um die Individualität und Identität der Teilnehmer zu wahren. Ohne die Peer-Klasse wäre es nicht möglich, die spezifischen Anforderungen und Verbindungen jedes einzelnen Teilnehmers zu verwalten
+
+
+
+
+
